@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head content as index.html -->
+    <title>Pemkis Furniture | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Same header as index.html -->
+    <header class="head">
+        <a href="#" class="logo">Pem<span>kis</span></a>
+        <div class="mobile-menu-btn">☰</div>
+        <nav class="nav-buttons">
+            <a href="#" class="btn">Home</a>
+            <a href="products.html" class="btn">Products</a>
+            <a href="about.html" class="btn">About</a>
+            <a href="contact.html" class="btn">Contact</a>
+            <div class="btn menu-btn">
+                More
+                <ul class="drop-down">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80');">
+        <div class="hero-content">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <section class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <i>📍</i>
+                        <div>
+                            <h3>Visit Our Showroom</h3>
+                            <p>juja <br>Kiambu</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i>✉</i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>pemkis@gmail.com<br>kpemkis@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i>📞</i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>(2547)29356 367<br>Mon-Fri: 9AM-6PM EST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook">f</a>
+                            <a href="#" aria-label="Instagram">ig</a>
+                            <a href="#" aria-label="Pinterest">p</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject">
+                                <option>General Inquiry</option>
+                                <option>Product Questions</option>
+                                <option>Order Support</option>
+                                <option>Wholesale Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="button" onclick="sendToWhatsApp()">Send via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+            <a href="https://wa.me/254700847725" class="whatsapp-btn" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 12h8"></path>
+                    <path d="M12 8v8"></path>
+                </svg>
+            </a>
+        
+            <script>
+                function sendToWhatsApp() {
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+                    const subject = document.getElementById('subject').value;
+                    const phone= document.getElementById('phone').value;
+        
+                    const whatsappNumber = '254700847725';
+                    const whatsappMessage = `*Name:* ${name}\n*Email:* ${email}\n*Phone:* ${phone}\n*subject* ${message}`;
+        
+                    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+        
+                    window.open(whatsappUrl, '_blank');
+                }
+            </script>
+        
+            
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1129.7198979108315!2d36.6072124552164!3d-1.1436078961451409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dd717f3c0c4b1f%3A0x1b10e4ec25d9034a!2sJuja%2C%20Kenya!5e0!3m2!1sen!2sus!4v1689871234567!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+            
+            <div class="contact-faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-question">What is your return policy?</button>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day return policy for unused items in original condition. Custom pieces are final sale.</p>
+                    </div>
+                </div>
+                <!-- More FAQ items -->
+            </div>
+        </section>
+    </main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">Pem<span>kis</span></div>
+                <p>Crafting exceptional furniture since 2010. Our mission is to create pieces that become cherished parts of your home and life.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">f</a>
+                    <a href="#" class="social-link" aria-label="Instagram">ig</a>
+                    <a href="#" class="social-link" aria-label="Pinterest">p</a>
+                    <a href="#" class="social-link" aria-label="Twitter">t</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-title">Categories</h3>
+                <ul>
+                    <li><a href="#">Living Room</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Office</a></li>
+                    <li><a href="#">Outdoor</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 class="footer-title">Contact Info</h3>
+                <p><i>📍</i> Juja, Ndarasha, Kenya</p>
+                <p><i>✉</i> pemkis@gmail.com</p>
+                <p><i>📞</i> +254 729 356 367</p>
+                <p><i>🕒</i> Mon-Fri: 9AM-6PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <a href="https://apollo-portofolio.vercel.app" style="color: #166088;">Apollo Tech</a>. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Theme Toggle -->
+<button class="theme-toggle" id="toggleTheme" aria-label="Toggle dark mode">☀️</button>
+
+<script>
+    // Theme Toggle
+    const toggleTheme = document.getElementById('toggleTheme');
+    const body = document.body;
+    
+    // Check for saved theme preference or use preferred color scheme
+    const savedTheme = localStorage.getItem('theme') || 
+                     (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    
+    if (savedTheme === 'dark') {
+        body.classList.add('dark');
+        toggleTheme.textContent = '🌙';
+    }
+    
+    toggleTheme.addEventListener('click', () => {
+        body.classList.toggle('dark');
+        const isDark = body.classList.contains('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        toggleTheme.textContent = isDark ? '🌙' : '☀️';
+    });
+    
+    // Countdown Timer
+    function updateCountdown() {
+        const endDate = new Date();
+        endDate.setDate(endDate.getDate() + 7); // 7 days from now
+        
+        const now = new Date().getTime();
+        const distance = endDate - now;
+        
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById('days').textContent = days.toString().padStart(2, '0');
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+    }
+    
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+    
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navButtons = document.querySelector('.nav-buttons');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+        navButtons.style.display = navButtons.style.display === 'flex' ? 'none' : 'flex';
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (window.innerWidth <= 768) {
+                    navButtons.style.display = 'none';
+                }
+            }
+        });
+    });
+    
+    // Form submission
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to a server
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    }
+</script>
+    <!-- Same footer as index.html -->
+</body>
+</html>
